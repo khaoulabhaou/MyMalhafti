@@ -1,11 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
-import CountriesDisplay from './myApi.jsx'
-
+import Malhfa from './myProject/App.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <CountriesDisplay />
+    <Malhfa/>
   </StrictMode>,
 )
