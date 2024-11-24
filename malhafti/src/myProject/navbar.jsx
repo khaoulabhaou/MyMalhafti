@@ -14,7 +14,7 @@ export default function Navbar() {
               <Link to="/" className="nav-link">الصفحة الرئيسية</Link>
             </li>
             <li className="nav-item">
-              <Link to="/malhaf" className="nav-link">الملحف</Link>
+              <Link to="/Malhaf" className="nav-link">الملحف</Link>
             </li>
             <li className="nav-item">
               <Link to="/rambayat" className="nav-link">الرمبي</Link>
