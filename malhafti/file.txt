@@ -1,8 +1,0 @@
-{ "id": "51", "type": "", "size": "", "price": "", "categorie": "ڭاز", "image": "" },
-{ "id": "52", "type": "", "size": "", "price": "", "categorie": "ڭاز", "image": "" },
-{ "id": "53", "type": "", "size": "", "price": "", "categorie": "ڭاز", "image": "" },
-{ "id": "54", "type": "", "size": "", "price": "", "categorie": "ڭاز", "image": "" },
-{ "id": "55", "type": "", "size": "", "price": "", "categorie": "ڭاز", "image": "" },
-{ "id": "56", "type": "", "size": "", "price": "", "categorie": "ڭاز", "image": "" },
-{ "id": "57", "type": "", "size": "", "price": "", "categorie": "ڭاز", "image": "" },
-{ "id": "58", "type": "", "size": "", "price": "", "categorie": "ڭاز", "image": "" }

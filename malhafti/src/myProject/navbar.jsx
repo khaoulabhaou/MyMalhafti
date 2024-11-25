@@ -17,19 +17,19 @@ export default function Navbar() {
               <Link to="/Malhaf" className="nav-link">الملحف</Link>
             </li>
             <li className="nav-item">
-              <Link to="/rambayat" className="nav-link">الرمبي</Link>
+              <Link to="/Rambayat" className="nav-link">الرمبي</Link>
             </li>
             <li className="nav-item">
-              <Link to="/podiyat" className="nav-link">البوديات</Link>
+              <Link to="/Bodiyat" className="nav-link">البوديات</Link>
             </li>
             <li className="nav-item">
-              <Link to="/nail" className="nav-link">النعايل</Link>
+              <Link to="/n3ail" className="nav-link">النعايل</Link>
             </li>
             <li className="nav-item">
-              <Link to="/saikan" className="nav-link">الصيكان</Link>
+              <Link to="/sikan" className="nav-link">الصيكان</Link>
             </li>
             <li className="nav-item">
-              <Link to="/diyar" className="nav-link">الديار</Link>
+              <Link to="/dyar" className="nav-link">الديار</Link>
             </li>
           </ul>
         </div>
