@@ -31,6 +31,8 @@ export default function Navbar() {
             <li className="nav-item">
               <Link to="/dyar" className="nav-link">الديار</Link>
             </li>
+            <li className="nav-item">
+            </li>
           </ul>
         </div>
       </div>

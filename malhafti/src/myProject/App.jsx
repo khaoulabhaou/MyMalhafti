@@ -11,6 +11,8 @@ import Bodiyat from "./bodiyat.jsx"
 import Sikan from "./sikan.jsx"
 import N3ail from "./n3ail.jsx"
 import Dyar from "./dyar.jsx"
+import NotFound from "./notfound.jsx"
+import IdParam from "./idFinder.jsx"
 export default function Malhfa(){
   return(
     <BrowserRouter>
@@ -23,6 +25,7 @@ export default function Malhfa(){
       <Route path="/Sikan" element={<Sikan malhafti={malhafti.malhafti}/> } />
       <Route path="/N3ail" element={<N3ail malhafti={malhafti.malhafti}/> } />
       <Route path="/Dyar" element={<Dyar malhafti={malhafti.malhafti}/> } />
+      <Route path="*" element={<NotFound /> } />
     </Routes>
     <Footer />
     </BrowserRouter>

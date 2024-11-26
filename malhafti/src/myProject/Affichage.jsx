@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Affichage(props) {
   return (
     <div
@@ -17,6 +19,7 @@ export default function Affichage(props) {
       <div className="card-body">
         <p className="card-type">القياس : {props.malhafti.size}</p>
         <p className="card-text">الثمن : {props.malhafti.price}</p>
+        <Link to={`/idFinder.jsx/${props.malhafti.id}`}>المزيد</Link>
         <button className="btn btn-primary">
           شراء
         </button>
