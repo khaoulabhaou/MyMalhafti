@@ -1,5 +1,6 @@
 import { malhafti } from "../api/malhafti";
 import Affichage from "./Affichage";
+
 export default function Home() {
     return (
       <div className="container" id="content">
