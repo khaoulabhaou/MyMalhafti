@@ -13,6 +13,7 @@ import N3ail from "./n3ail.jsx"
 import Dyar from "./dyar.jsx"
 import NotFound from "./notfound.jsx"
 import IdParam from "./idFinder.jsx"
+import Panier from "./panier.jsx"
 export default function Malhfa(){
   return(
     <BrowserRouter>
@@ -26,7 +27,7 @@ export default function Malhfa(){
       <Route path="/N3ail" element={<N3ail malhafti={malhafti.malhafti}/> } />
       <Route path="/Dyar" element={<Dyar malhafti={malhafti.malhafti}/> } />
       <Route path="/idFinder/:id" element={<IdParam malhafti={malhafti.malhafti}/> } />
-      
+      <Route path="/panier" element={<Panier /> } />
       <Route path="*" element={<NotFound /> } />
     </Routes>
     <Footer />
