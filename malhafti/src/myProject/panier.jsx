@@ -1,12 +1,14 @@
 import { useDispatch, useSelector } from "react-redux";
 import { deleted } from "./Actions";
+import { useState } from "react";
 
 export default function Panier() {
     const panier = useSelector((state) => state.panier);
     const dispatch = useDispatch();
+    const [quantity, setQuantity] = useState(0);
 
     const totals = panier.reduce((total, malhafti) => {
-        return total + malhafti.price * malhafti.quantity;
+        return total += parseFloat(malhafti.price) * malhafti.quantity;
     }, 0);
 
     return (
@@ -24,24 +26,25 @@ export default function Panier() {
                             </tr>
                         </thead>
                         <tbody id="cart-table-body">
-                            {panier.map((malhafti) => (
-                                <tr key={malhafti.id} id={`item-${malhafti.id}`}>
-                                    <td id={`product-${malhafti.id}`}>
-                                        <div className="d-flex align-items-center" id={`product-detail-${malhafti.id}`}>
+                            {panier.map((malhafti,i) => (
+                                <tr key={i}>
+                                    <td>
+                                        <div className="d-flex align-items-center">
                                             <img
                                                 src={malhafti.image}
                                                 alt={malhafti.type}
-                                                id={`product-image-${malhafti.id}`}
                                                 style={{ width: "50px", height: "50px", objectFit: "cover" }}
                                                 className="mr-3"
                                             />
-                                            {malhafti.type}
+                                            {/* {malhafti.type} */}
                                         </div>
                                     </td>
-                                    <td id={`price-${malhafti.id}`}>${malhafti.price.toFixed(2)}</td>
-                                    <td id={`quantity-${malhafti.id}`}>{malhafti.quantity}</td>
-                                    <td id={`action-${malhafti.id}`}>
-                                        <button onClick={() => dispatch(deleted(malhafti.id))} className="btn btn-danger" id={`remove-button-${malhafti.id}`}>
+                                    <td>{malhafti.price}</td>
+                                    <td>{malhafti.quantity}
+                                    <input type="number" value={quantity} onChange={(e) => setQuantity((e.target.value))} min="1" />
+                                    </td>
+                                    <td>
+                                        <button onClick={() => dispatch(deleted(malhafti.id))} className="btn btn-danger">
                                             حذف
                                         </button>
                                     </td>
@@ -52,7 +55,7 @@ export default function Panier() {
 
                     <div className="d-flex justify-content-between mt-4" id="total-section">
                         <h4 id="total-label">المجموع</h4>
-                        <h4 id="total-price">{totals}dh</h4>
+                        <h4 id="total-price">{totals} dh</h4>
                     </div>
                 </div>
             </div>
