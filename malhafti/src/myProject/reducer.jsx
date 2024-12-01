@@ -6,10 +6,7 @@ const current_state = {
 const reducer = (state = current_state, action) => {
     switch (action.type) {
         case 'added':
-            return {
-                ...state,
-                panier: [
-                    ...state.panier,
+            return {...state,panier: [...state.panier,
                     {
                         id: action.payload.id,
                         type: action.payload.type,

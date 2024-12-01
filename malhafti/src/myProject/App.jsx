@@ -14,6 +14,7 @@ import Dyar from "./dyar.jsx"
 import NotFound from "./notfound.jsx"
 import IdParam from "./idFinder.jsx"
 import Panier from "./panier.jsx"
+
 export default function Malhfa(){
   return(
     <BrowserRouter>

@@ -8,7 +8,7 @@ export default function Panier() {
     const [quantity, setQuantity] = useState(0);
 
     const totals = panier.reduce((total, malhafti) => {
-        return total += parseFloat(malhafti.price) * malhafti.quantity;
+        return total += Number(malhafti.price * malhafti.quantity)
     }, 0);
 
     return (
@@ -41,7 +41,7 @@ export default function Panier() {
                                     </td>
                                     <td>{malhafti.price}</td>
                                     <td>{malhafti.quantity}
-                                    <input type="number" value={quantity} onChange={(e) => setQuantity((e.target.value))} min="1" />
+                                    <input type="number" value={quantity} onChange={(e) => setQuantity(parseInt((e.target.value)))} min="1" />
                                     </td>
                                     <td>
                                         <button onClick={() => dispatch(deleted(malhafti.id))} className="btn btn-danger">
@@ -55,10 +55,10 @@ export default function Panier() {
 
                     <div className="d-flex justify-content-between mt-4" id="total-section">
                         <h4 id="total-label">المجموع</h4>
-                        <h4 id="total-price">{totals} dh</h4>
+                        <h4 id="total-price">dh{totals}</h4>
                     </div>
                 </div>
             </div>
         </div>
-    );
+    )
 }
