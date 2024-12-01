@@ -3,12 +3,12 @@ import { deleted } from "./Actions";
 import { useState } from "react";
 
 export default function Panier() {
-    const panier = useSelector((state) => state.panier);
+    const panier = useSelector((data) => data.panier);
     const dispatch = useDispatch();
     const [quantity, setQuantity] = useState(0);
 
     const totals = panier.reduce((total, malhafti) => {
-        return total += Number(malhafti.price * malhafti.quantity)
+        return total += Number(malhafti.price) * Number(quantity)
     }, 0);
 
     return (
@@ -36,7 +36,6 @@ export default function Panier() {
                                                 style={{ width: "50px", height: "50px", objectFit: "cover" }}
                                                 className="mr-3"
                                             />
-                                            {/* {malhafti.type} */}
                                         </div>
                                     </td>
                                     <td>{malhafti.price}</td>
