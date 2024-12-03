@@ -8,7 +8,7 @@ export default function Affichage(props) {
       {/* <p className="card-type">{props.malhafti.category}</p> */}
       <p className="card-type">{props.malhafti.type}</p>
         <p className="card-type">القياس : {props.malhafti.size}</p>
-        <p className="card-text">الثمن : {props.malhafti.price}</p>
+        <p className="card-text">الثمن : {props.malhafti.price*38}</p>
         <Link to={`/idFinder/${props.malhafti.id}`} className="btn btn-primary text-white">المزيد</Link>
       </div>
     </div>

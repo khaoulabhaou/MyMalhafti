@@ -99,3 +99,31 @@ form {
     background-color: #0056b3;
     border-color: #0056b3;
 }
+.homepage-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  .slider-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden; /* Prevent the slider from overflowing */
+  }
+  
+  .each-slide-effect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+  }
+  
+  .each-slide-effect div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  

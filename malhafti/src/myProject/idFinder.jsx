@@ -24,7 +24,7 @@ export default function IdParam() {
 
                 <p>{v.type}</p>
                 <p>{v.category}</p>
-                <p>{v.price}</p>
+                <p>{v.price*38}</p>
 
                 <div>
                     <button className="btn btn-primary" onClick={buy}>شراء</button>

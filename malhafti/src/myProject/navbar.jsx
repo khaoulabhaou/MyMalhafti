@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Input from "./recherche.jsx"
+// import Input from "./recherche.jsx"
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -34,7 +34,6 @@ export default function Navbar() {
             <li className="nav-item">
           <Link className="nav-link" to="/panier">السلة</Link>
         </li>
-            <Input />
           </ul> 
         </div>
       </div>

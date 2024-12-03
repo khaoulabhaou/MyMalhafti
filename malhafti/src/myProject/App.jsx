@@ -2,6 +2,8 @@ import { Routes, Route, BrowserRouter } from "react-router-dom"
 import { malhafti } from "../api/malhafti"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './style.css'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Navbar from "./navbar.jsx"
 import Home from "./Home.jsx"
 import Footer from "./footer.jsx"

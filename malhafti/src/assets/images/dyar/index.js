@@ -1,0 +1,12 @@
+export { default as dyar1 } from './dyar1.jpg';
+export { default as dyar2 } from './dyar2.jpg';
+export { default as dyar3 } from './dyar3.jpg';
+export { default as dyar4 } from './dyar4.jpg';
+export { default as dyar5 } from './dyar5.jpg';
+export { default as dyar6 } from './dyar6.jpg';
+export { default as dyar7 } from './dyar7.jpg';
+export { default as dyar8 } from './dyar8.jpg';
+export { default as dyar9 } from './dyar9.jpg';
+export { default as dyar10 } from './dyar10.jpg';
+export { default as dyar11 } from './dyar11.jpg';
+export { default as dyar12 } from './dyar12.jpg';

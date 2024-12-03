@@ -1,0 +1,13 @@
+export { default as pic1 } from './pic1.jpg';
+export { default as pic2 } from './pic2.jpg';
+export { default as pic3 } from './pic3.jpg';
+export { default as pic4 } from './pic4.jpg';
+export { default as pic5 } from './pic5.jpg';
+export { default as pic6 } from './pic6.jpg';
+export { default as pic7 } from './pic7.jpg';
+export { default as pic8 } from './pic8.jpg';
+export { default as pic9 } from './pic9.jpg';
+export { default as pic10 } from './pic10.jpg';
+export { default as pic11 } from './pic11.jpg';
+export { default as pic12 } from './pic12.jpg';
+export { default as pic13 } from './pic13.jpg';

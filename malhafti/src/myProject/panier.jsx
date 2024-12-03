@@ -5,10 +5,17 @@ import { useState } from "react";
 export default function Panier() {
     const panier = useSelector((data) => data.panier);
     const dispatch = useDispatch();
-    const [quantity, setQuantity] = useState(0);
+    const [quantities, setQuantities] = useState({});
+
+    const handle = (id, value) => {
+        setQuantities((prev) => ({
+            ...prev,
+            [id]: value
+        }));
+    };
 
     const totals = panier.reduce((total, malhafti) => {
-        return total += Number(malhafti.price) * Number(quantity)
+        return total += Number(malhafti.price*38) * Number(quantities[malhafti.id]);
     }, 0);
 
     return (
@@ -26,8 +33,8 @@ export default function Panier() {
                             </tr>
                         </thead>
                         <tbody id="cart-table-body">
-                            {panier.map((malhafti,i) => (
-                                <tr key={i}>
+                            {panier.map((malhafti) => (
+                                <tr key={malhafti.id}>
                                     <td>
                                         <div className="d-flex align-items-center">
                                             <img
@@ -38,9 +45,14 @@ export default function Panier() {
                                             />
                                         </div>
                                     </td>
-                                    <td>{malhafti.price}</td>
-                                    <td>{malhafti.quantity}
-                                    <input type="number" value={quantity} onChange={(e) => setQuantity(parseInt((e.target.value)))} min="1" />
+                                    <td>{malhafti.price*38}</td>
+                                    <td>
+                                        <input 
+                                            type="number" 
+                                            value={quantities[malhafti.id] || 0}
+                                            onChange={(e) => handle(malhafti.id, parseInt(e.target.value))} 
+                                            min="1" 
+                                        />
                                     </td>
                                     <td>
                                         <button onClick={() => dispatch(deleted(malhafti.id))} className="btn btn-danger">
@@ -54,10 +66,10 @@ export default function Panier() {
 
                     <div className="d-flex justify-content-between mt-4" id="total-section">
                         <h4 id="total-label">المجموع</h4>
-                        <h4 id="total-price">dh{totals}</h4>
+                        <h4 id="total-price">{totals} أوقية</h4>
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
