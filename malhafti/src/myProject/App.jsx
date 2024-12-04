@@ -1,9 +1,10 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom"
 import { malhafti } from "../api/malhafti"
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import './style.css'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 import Navbar from "./navbar.jsx"
 import Home from "./Home.jsx"
 import Footer from "./footer.jsx"
@@ -16,6 +17,9 @@ import Dyar from "./dyar.jsx"
 import NotFound from "./notfound.jsx"
 import IdParam from "./idFinder.jsx"
 import Panier from "./panier.jsx"
+import HelpPage from "./HelpPage.jsx"
+import ContactPage from "./ContactPage.jsx"
+import AboutPage from "./AboutPage.jsx"
 
 export default function Malhfa(){
   return(
@@ -32,6 +36,9 @@ export default function Malhfa(){
       <Route path="/idFinder/:id" element={<IdParam malhafti={malhafti.malhafti}/> } />
       <Route path="/panier" element={<Panier /> } />
       <Route path="*" element={<NotFound /> } />
+      <Route path="/HelpPage" element={<HelpPage /> } />
+      <Route path="/AboutPage" element={<AboutPage /> } />
+      <Route path="/ContactPage" element={<ContactPage /> } />
     </Routes>
     <Footer />
     </BrowserRouter>

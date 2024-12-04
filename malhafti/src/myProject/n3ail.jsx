@@ -1,5 +1,6 @@
 import { malhafti } from "../api/malhafti";
 import Affichage from "./Affichage";
+import BackToTopButton from "./BackToTopButton";
 
 export default function N3ail(){
     return(
@@ -13,6 +14,8 @@ export default function N3ail(){
                     )
                 })
             }
+                    <BackToTopButton />
+
         </div>
     )
 }

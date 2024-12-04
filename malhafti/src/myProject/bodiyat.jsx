@@ -1,5 +1,6 @@
 import { malhafti } from "../api/malhafti";
 import Affichage from "./Affichage";
+import BackToTopButton from "./BackToTopButton";
 
 export default function Bodiyat(){
     return(
@@ -11,8 +12,8 @@ export default function Bodiyat(){
                     return(
                     <Affichage key={i} malhafti = {element} />
                     )
-                })
-            }
+                })}
+            <BackToTopButton />
         </div>
     )
 }

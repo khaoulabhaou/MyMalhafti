@@ -1,0 +1,9 @@
+export { default as iran1 } from './iran1.jpg';
+export { default as iran2 } from './iran2.jpg';
+export { default as iran3 } from './iran3.jpg';
+export { default as iran4 } from './iran4.jpg';
+export { default as iran5 } from './iran5.jpg';
+export { default as iran6 } from './iran6.jpg';
+export { default as iran7 } from './iran7.jpg';
+export { default as iran8 } from './iran8.jpg';
+export { default as iran9 } from './iran9.jpg';

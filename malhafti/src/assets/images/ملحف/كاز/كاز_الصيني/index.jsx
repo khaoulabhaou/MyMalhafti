@@ -1,0 +1,9 @@
+export { default as sini1 } from './sini1.jpg';
+export { default as sini2 } from './sini2.jpg';
+export { default as sini3 } from './sini3.jpg';
+export { default as sini4 } from './sini4.jpg';
+export { default as sini5 } from './sini5.jpg';
+export { default as sini6 } from './sini6.jpg';
+export { default as sini7 } from './sini7.jpg';
+export { default as sini8 } from './sini8.jpg';
+export { default as sini9 } from './sini9.jpg';

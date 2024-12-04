@@ -1,0 +1,9 @@
+export { default as japon1 } from './japon1.jpg';
+export { default as japon2 } from './japon2.jpg';
+export { default as japon3 } from './japon3.jpg';
+export { default as japon4 } from './japon4.jpg';
+export { default as japon5 } from './japon5.jpg';
+export { default as japon6 } from './japon6.jpg';
+export { default as japon7 } from './japon7.jpg';
+export { default as japon8 } from './japon8.jpg';
+export { default as japon9 } from './japon9.jpg';

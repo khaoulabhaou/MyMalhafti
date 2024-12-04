@@ -1,5 +1,6 @@
 import { malhafti } from "../api/malhafti";
 import Affichage from "./Affichage";
+import BackToTopButton from "./BackToTopButton";
 
 export default function Sikan(){
     return(
@@ -12,7 +13,8 @@ export default function Sikan(){
                     <Affichage key={i} malhafti = {malhafti} />
                 )
                 })
-            }
+            }        <BackToTopButton />
+
         </div>
     )
 }

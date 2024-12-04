@@ -1,5 +1,6 @@
 import { malhafti } from "../api/malhafti";
 import Affichage from "./Affichage";
+import BackToTopButton from "./BackToTopButton";
 
 export default function Dyar(){
     return(
@@ -11,6 +12,7 @@ export default function Dyar(){
                     return <Affichage key={i} malhafti = {element}/>
                 })
             }
+                    <BackToTopButton />
         </div>
     ) 
 }

@@ -1,0 +1,10 @@
+export { default as diana1 } from './diana1.jpg';
+export { default as diana2 } from './diana2.jpg';
+export { default as diana3 } from './diana3.jpg';
+export { default as diana4 } from './diana4.jpg';
+export { default as diana5 } from './diana5.jpg';
+export { default as diana6 } from './diana6.jpg';
+export { default as diana7 } from './diana7.jpg';
+export { default as diana8 } from './diana8.jpg';
+export { default as diana9 } from './diana9.jpg';
+export { default as diana10 } from './diana10.jpg';

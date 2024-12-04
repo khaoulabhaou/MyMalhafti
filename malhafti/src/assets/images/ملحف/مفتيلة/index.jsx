@@ -1,0 +1,9 @@
+export { default as maftila1 } from './maftila1.jpg';
+export { default as maftila2 } from './maftila2.jpg';
+export { default as maftila3 } from './maftila3.jpg';
+export { default as maftila4 } from './maftila4.jpg';
+export { default as maftila5 } from './maftila5.jpg';
+export { default as maftila6 } from './maftila6.jpg';
+export { default as maftila7 } from './maftila7.jpg';
+export { default as maftila8 } from './maftila8.jpg';
+export { default as maftila9 } from './maftila9.jpg';

@@ -1,5 +1,6 @@
 import { malhafti } from "../api/malhafti";
 import Affichage from "./Affichage";
+import BackToTopButton from "./BackToTopButton";
 
 export default function Malhaf(){
     return(
@@ -12,7 +13,8 @@ export default function Malhaf(){
                         <Affichage key = {i} malhafti = {element}/>
                     )
                 })
-            }
+            }        <BackToTopButton />
+
         </div>
     )
 }
