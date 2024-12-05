@@ -5,6 +5,7 @@ import BackToTopButton from "./BackToTopButton";
 
 export default function Panier() {
     const panier = useSelector((data) => data.panier);
+    
     const dispatch = useDispatch();
     const [quantities, setQuantities] = useState({});
 
@@ -16,7 +17,7 @@ export default function Panier() {
     };
 
     const totals = panier.reduce((total, element) => {
-        return total += Number(element.price * 38) * Number(quantities[element.id]);
+        return total += (Number(element.price * 38) * Number(quantities[element.id]))/2;
     }, 0);
 
     return (
@@ -39,19 +40,14 @@ export default function Panier() {
                                     <tr key={malhafti.id}>
                                         <td>
                                             <div className="d-flex align-items-center">
-                                                <img
-                                                    src={malhafti.image}
-                                                    alt="Image Not Found"
-                                                    style={{ width: "50px", height: "50px", objectFit: "cover" }}
-                                                    className="mr-3"
-                                                />
+                                                <td>{malhafti.type}</td>
                                             </div>
                                         </td>
                                         <td>{malhafti.price * 38}</td>
                                         <td>
                                             <input 
                                                 type="number" 
-                                                value={quantities[malhafti.id] || 0}  // Use quantity from the Redux store
+                                                value={malhafti.quantity}
                                                 onChange={(e) => handle(malhafti.id, parseInt(e.target.value))} 
                                                 min="1" 
                                             />

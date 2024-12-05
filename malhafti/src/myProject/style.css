@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 20px;
 }
 .card-img-top {
     width: 100%;
@@ -239,7 +240,8 @@ form {
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  width: 50%;
+  width: 100%;
+  height: 20rem;
 }
 
 .product-details h2 {
@@ -312,4 +314,141 @@ form {
 
 .search-input-wrapper input {
   width: 100%;
+}
+.form{
+   width: 500px;
+}
+
+.container.py-5 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card.category-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  overflow: hidden;
+  width: 100%;
+  max-width: 350px; /* Set a max width for better scaling */
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+}
+
+.card-body {
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.card-body h5 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.card.category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#category-0 {
+  background-color: #f0f8ff;
+}
+
+#category-1 {
+  background-color: #faebd7;
+}
+
+#category-2 {
+  background-color: #f5f5dc;
+}
+
+#category-3 {
+  background-color: #fff0f5;
+}
+
+#category-4 {
+  background-color: #fafad2;
+}
+
+#category-5 {
+  background-color: #f0fff0;
+}
+
+.card.category-card img {
+  max-height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-body h5 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #343a40;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+#content .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#content .col-md-4 {
+  display: flex;
+  justify-content: center;
+}
+
+.category-card {
+  width: 100%;
+}
+#content .col-md-4, .col-md-3 {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+.card-body img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;  
+}
+.quote {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 500;
+  color: #5a3e2f;
+  background-color: #f9f9f9;
+  border-left: 5px solid #5c3e2f; 
+  padding: 15px 20px;
+  margin: 0 auto 30px;
+  display: inline-block;
+  line-height: 1.6;
+}
+
+.quote::before {
+  content: "“";
+  font-size: 2.5rem;
+  vertical-align: top;
+  color: #5c3e2f;
+  margin-right: 10px;
+}
+
+.quote::after {
+  content: "”";
+  font-size: 2.5rem;
+  vertical-align: bottom;
+  color: #5c3e2f;
+  margin-left: 10px;
 }

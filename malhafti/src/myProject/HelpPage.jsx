@@ -1,4 +1,5 @@
 import React from "react";
+import BackToTopButton from "./BackToTopButton";
 
 export default function HelpPage(){
   return (
@@ -94,6 +95,7 @@ export default function HelpPage(){
           <button type="submit" className="btn btn-primary">إرسال</button>
         </form>
       </section>
+      <BackToTopButton />
     </div>
   );
 };

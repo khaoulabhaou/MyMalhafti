@@ -43,7 +43,7 @@ export default function Carousel() {
         </div>
         <div className="carousel-item">
           <img
-            src={picture.pic8}
+            src={picture.pic15}
             className="d-block w-100"
             alt="..."
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
@@ -51,7 +51,7 @@ export default function Carousel() {
         </div>
         <div className="carousel-item">
           <img
-            src={picture.pic8}
+            src={picture.pic16}
             alt="..."
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
           />

@@ -2,7 +2,7 @@ import { malhafti } from "../api/malhafti";
 import Affichage from "./Affichage";
 import BackToTopButton from "./BackToTopButton";
 
-export default function Rambayat(){
+export default function Ramby(){
     return(
         <div className="container" id="content">
             {
@@ -14,7 +14,5 @@ export default function Rambayat(){
                     )
                 })
             }<BackToTopButton />
-        </div>
-                
-   
+        </div>   
 )}

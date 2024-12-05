@@ -9,18 +9,15 @@ import BackToTopButton from "./BackToTopButton";
 export default function IdParam() {
     const { id } = useParams();
     const v = malhafti.malhafti.find((x) => x.id === parseInt(id));
-
     const dispatch = useDispatch();
     const [quantity, setQuantity] = useState(1);
 
-    function handleQuantityChange(e) {
-        const value = Math.max(1, parseInt(e.target.value));
-        setQuantity(value);
-    }
-
     function buy(e) {
         e.preventDefault();
-        dispatch(added(v, quantity));  // Dispatching item and quantity to Redux
+        const product={id : v.id, type : v.type, size : v.size, price : v.price,  quantity : parseInt(quantity)}
+        dispatch(added(product)); 
+        console.log(product);
+        
     }
 
     {v?<p>{}</p>:<NotFound />}
@@ -30,6 +27,7 @@ export default function IdParam() {
         <>
             <div className="product-container">
                 <div className="product-content">
+                    <form onSubmit={buy} className="form">
                     <div className="product-details">
                         <h2>{v.type}</h2>
                         <p><strong>الفئة:</strong> {v.category}</p>
@@ -42,12 +40,13 @@ export default function IdParam() {
                                 id="quantity" 
                                 min="1" 
                                 value={quantity} 
-                                onChange={handleQuantityChange} 
+                                onChange={e => setQuantity(e.target.value)} 
                             />
                         </div>
 
-                        <button className="btn btn-primary" onClick={buy}>شراء</button>
+                        <button className="btn btn-primary">شراء</button>
                     </div>
+                    </form>
 
                     <div className="product-image">
                         <img src={v.image} alt="Image not found" className="product-img" />

@@ -1,4 +1,5 @@
 import React from "react";
+import BackToTopButton from "./BackToTopButton";
 
 export default function AboutPage(){
   return (
@@ -47,6 +48,7 @@ export default function AboutPage(){
         <p>استمتع بتجربة تسوق فريدة واكتشف جمال الملحفة التقليدية التي تعكس الثقافة الموريتانية.</p>
         <a href="/" className="btn btn-primary">تسوق الآن</a>
       </section>
+      <BackToTopButton />
     </div>
   );
 };

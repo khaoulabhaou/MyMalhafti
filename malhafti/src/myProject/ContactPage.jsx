@@ -1,4 +1,5 @@
 import React from "react";
+import BackToTopButton from "./BackToTopButton";
 
 export default function ContactPage(){
   return (
@@ -8,7 +9,6 @@ export default function ContactPage(){
         نحن هنا لمساعدتك في أي وقت! إذا كان لديك أي استفسار أو مشكلة، يرجى استخدام إحدى وسائل التواصل أدناه للتواصل معنا.
       </p>
 
-      {/* Contact Information Section */}
       <section className="my-5">
         <h2>معلومات الاتصال</h2>
         <ul className="list-unstyled">
@@ -18,7 +18,6 @@ export default function ContactPage(){
         </ul>
       </section>
 
-      {/* Location Section */}
       <section className="my-5">
         <h2>موقعنا</h2>
         <p>شارع النصر، نواكشوط، موريتانيا</p>
@@ -32,7 +31,6 @@ export default function ContactPage(){
         ></iframe>
       </section>
 
-      {/* Contact Form Section */}
       <section className="my-5">
         <h2>أرسل لنا رسالة</h2>
         <form>
@@ -51,6 +49,7 @@ export default function ContactPage(){
           <button type="submit" className="btn btn-primary">إرسال</button>
         </form>
       </section>
+      <BackToTopButton />
     </div>
   );
 };
